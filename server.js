@@ -48,6 +48,13 @@ app.get('/bad', (reg, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    welcomeMessage: 'This is a new page added',
+  });
+});
+
 app.listen(port, () => {
   console.log('Server is up on 3000');
 });
